@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Order Page">
+  <title>Order</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- External JavaScript file linked to the HTML -->
+  <script src="./JS/script.js"></script>
+  <!-- Link to an external CSS file for styling the page -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+  <!-- The header section at the top of the page -->
+  <header>
+    <img  src="./image/pizza3.jpg" alt="Image">
+    <h5>Red Swan Pizza</h5>
+    <nav class="navi">
+      <!-- Anchor tag for the home page  -->
+         <a href="index.html">Home</a>
+
+        <a href="order.html">Order</a> 
+    </nav>
+  </header>
+
+  <!-- Section for building the pizza -->
+  <section class="pizza">
+    <div class="container">
+      <h2 class="h2">Choose your Toppings</h2>
+      <div class="pizza_options">
+        <!-- Options for selecting pizza size -->
+        <div class="option">
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="personal">6"Personal</option>
+            <option value="small">8"Small</option>
+            <option value="medium">12"Medium</option>
+            <option value="large">14"Large</option>
+            <option value="extra">16"Extra Large </option>
+          </select>
+        </div>
+        <!-- Options for selecting pizza crust -->
+        <div class="option">
+          <label for="crust">Crust:</label>
+          <select id="crust">
+            <option value="Thin">Thin</option>
+            <option value="Traditional">Traditional</option>
+            <option value="Gulten">Gulten Free </option>
+            <option value="Cauliflower">Cauliflower</option>
+            <option value="Keto">Keto</option>
+          </select>
+        </div>
+        <!-- Options for selecting pizza sauces -->
+        <div class="option">
+          <label>Sauces:</label>
+          <input type="radio" id="sauce-1" name="sauce" value="Signature Sauce"> Signature Sauce
+          <input type="radio" id="sauce-2" name="sauce" value="Ranch"> Ranch
+          <input type="radio" id="sauce-3" name="sauce" value="Sweet Chilli"> Sweet Chilli
+          <input type="radio" id="sauce-4" name="sauce" value="Buffalo Sauce"> Buffalo Sauce
+          <input type="radio" id="sauce-5" name="sauce" value="BBQ and Tomato mix"> BBQ and Tomato mix
+          <input type="radio" id="sauce-6" name="sauce" value="Teriyaki"> Teriyaki
+        </div>
+        
+        <!-- Options for selecting meat toppings -->
+        <div class="option">
+          <label>Add Meat Toppings:</label>
+          <input type="checkbox" id="toppings-1" value="Bacon Crumble"> Bacon Crumble
+          <input type="checkbox" id="toppings-2" value="Chicken"> Chicken
+          <input type="checkbox" id="toppings-3" value="Spicy Chicken">Spicy Chicken
+          <input type="checkbox" id="toppings-4" value="Pesto Chicken">Pesto Chicken
+          <input type="checkbox" id="toppings-5" value="Ranch Chicken">Ranch Chicken
+          <input type="checkbox" id="toppings-6" value="Alfredo Chicken">Alfredo Chicken
+          <input type="checkbox" id="toppings-7" value="Cajun Chicken">Cajun Chicken
+          <input type="checkbox" id="toppings-8" value="Hot Chicken">Hot Chicken
+          <input type="checkbox" id="toppings-9" value="Butter Chicken">Butter Chicken
+          <input type="checkbox" id="toppings-10" value="Teriyaki Chicken">Teriyaki Chicken
+          <input type="checkbox" id="toppings-11" value="Tandoori Chicken">Tandoori Chicken
+          <input type="checkbox" id="toppings-12" value="BBQ Chicken">BBQ Chicken
+          <input type="checkbox" id="toppings-13" value="Beef"> Beef
+          <input type="checkbox" id="toppings-14" value="Lean Beef"> Lean Beef
+          <input type="checkbox" id="toppings-15" value="Ham"> Ham
+          <input type="checkbox" id="toppings-16" value="Pepperoni">Pepperoni
+          <input type="checkbox" id="toppings-17" value="Salami"> Salami
+          <input type="checkbox" id="toppings-18" value="BBQ Shrimp">BBQ Shrimp
+          <input type="checkbox" id="toppings-19" value="Lemon Shrimp">Lemon Shrimp
+          <input type="checkbox" id="toppings-20" value="Honey Garlic Chicken">Honey Garlic Chicken
+          <input type="checkbox" id="toppings-21" value="Chorizo Sausage">Chorizo Sausage
+        </div>
+        <!-- Options for selecting vegetarian toppings -->
+        <div class="option">
+          <label>Toppings Vegetarian:</label>
+          <input type="checkbox" id="toppings-22" value="Mushrooms">Mushroom
+          <input type="checkbox" id="toppings-23" value="Fresh Green Pepper"> Fresh Green Pepper
+          <input type="checkbox" id="toppings-24" value="Fresh Tomato">Fresh Tomato
+          <input type="checkbox" id="toppings-25" value="Pineapple">Pineapple
+          <input type="checkbox" id="toppings-26" value="Fresh Spinach">Fresh Spinach
+          <input type="checkbox" id="toppings-27" value="Red onion"> Red Onion
+          <input type="checkbox" id="toppings-28" value="Potato Wedges">Potato Wedges
+          <input type="checkbox" id="toppings-29" value="Fresh Red Pepper">Fresh Red Pepper
+          <input type="checkbox" id="toppings-30" value="Black Olive">Black Olive
+          <input type="checkbox" id="toppings-31" value="Banana Pepper">Banana Pepper
+          <input type="checkbox" id="toppings-32" value="Jalapeno Pepper">Jalapeno Pepper
+        </div>
+        <!-- Options for selecting cheese toppings -->
+        <div class="option">
+          <label>Add Cheese Toppings:</label>
+          <input type="checkbox" id="toppings-33" value="Parmesan cheese"> Parmesan cheese
+          <input type="checkbox" id="toppings-34" value="Mozzarella"> Mozarella
+          <input type="checkbox" id="toppings-35" value="Cheddar"> Cheddar
+          <input type="checkbox" id="toppings-36" value="Feta"> Feta
+          <input type="checkbox" id="toppings-37" value="Parmesan Cheese">Parmesan Cheese
+          <input type="checkbox" id="toppings-38" value="ButterPanner">Butter Paneer
+          <input type="checkbox" id="toppings-39" value="Paneer Tikka">Paneer Tikka
+          <input type="checkbox" id="toppings-40" value="Spicy Paneer">Spicy Paneer
+          <input type="checkbox" id="toppings-41" value="Vegan Cheese">Vegan Cheese
+        </div>
+        <!-- Options for selecting free toppings -->
+        <div class="option">
+          <label>Extra Charge Toppings:</label>
+          <input type="checkbox" id="toppings-42" value="Fresh Cilantro">Fresh Cilantro
+          <input type="checkbox" id="toppings-43" value="Garlic">Garlic
+          <input type="checkbox" id="toppings-44" value="Ginger">Ginger
+          <input type="checkbox" id="toppings-45" value="Chilli Flakes">Chilli Flakes
+          <input type="checkbox" id="toppings-46" value="Green Olive">Green Olive
+        </div>
+        <!-- Option for selecting delivery -->
+        <div class="option">
+          <label for="delivery">Delivery?</label>
+          <input type="checkbox" id="delivery"><br>
+          
+          <label for="takeout">Take-Out?</label>
+          <input type="checkbox" id="takeout"><br>
+          
+          <label for="dineinn">Dine-Inn?</label>
+          <input type="checkbox" id="dineinn"><br>
+        </div>
+    
+        <section class="payment_Section">
+          <div class="container1">
+            <h2>Payment</h2>
+            <div class="payment_options">
+              <!-- Option for selecting the payment method -->
+              <label for="payment_method">Payment Method:</label>
+              <select id="payment_method">
+                <option value="none">&nbsp;</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Cash">Cash</option>
+              </select>
+            </div>
+            <!-- Card details section -->
+            <div id="card-details" class="card-details">
+              <label for="card_name">Name on Card:</label>
+              <input type="text" id="card_name" required>
+              <label for="card_number">Card Number:</label>
+              <input type="number" id="card_number" required>
+              <label for="expiry">Expiry Date:</label>
+              <input type="date" id="expiry" required>
+              <label for="cvv">CVV:</label>
+              <input type="tel" pattern="[0-9]{3}" id="cvv" required>
+            </div>
+          </div>
+        </section>
+        <!-- Button to place the order -->
+        <button id="order-btn"> Place Order</button> 
+      </div>
+    </div>
+    </section>
+</body>
+</html>
